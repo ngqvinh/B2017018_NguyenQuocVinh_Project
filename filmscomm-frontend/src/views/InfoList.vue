@@ -5,7 +5,7 @@
         <input
           type="text"
           class="form-control"
-          placeholder="Tên phim"
+          placeholder="Tên Phim"
           v-model="nameToSearch"
         />
         <div class="input-group-append">
@@ -35,10 +35,10 @@
             </router-link>
             <p class="card-text">Quốc gia: {{ info.nation }}</p>
             <p v-if="info.vietsub === true">
-              Vietsub: <i class="fas fa-check-circle"></i>
+              Phụ đề: <i class="fas fa-check-circle"></i>
             </p>
             <p class="card-text" v-if="info.vietsub === false">
-              Vietsub: <i class="fas fa-times-circle"></i>
+              Phụ đề: <i class="fas fa-times-circle"></i>
             </p>
             <p class="card-text">Thể loại: {{ info.type }}</p>
           </div>
@@ -108,7 +108,7 @@ export default {
 </script>
 <style>
 .edit-form {
-  max-width: 400px;
+  max-width: 450px;
   margin: auto;
 }
 </style>

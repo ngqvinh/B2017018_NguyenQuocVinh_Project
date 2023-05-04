@@ -6,7 +6,7 @@
         :key="review.id"
         @click="setActiveReview(review, index)"
       >
-        <div class="card mb-3 bg-white">
+        <div class="card mb-3 -white">
           <div class="row no-gutters">
             <div class="col-md-6">
               <div>
@@ -16,7 +16,7 @@
             <div class="col-md-6">
               <div class="card-body">
                 <h1 class="mt-0">{{ review.episode }}</h1>
-                <p>Nội dung: {{ review.content }}</p>
+                <p>Ca sĩ trình bày: {{ review.content }}</p>
                 <p>Đánh giá: {{ review.rating }}</p>
                 <div v-if="currentUser">
                   <div v-if="currentUser.id === review.ownerId">
@@ -32,7 +32,7 @@
       </div>
     </div>
     <router-link :to="{ path: this.$route.params.id + '/add' }">
-      <button class="btn btn-info" type="button">Thêm tập phim</button>
+      <button class="btn btn-info" type="button">Thêm bài hát</button>
     </router-link>
   </div>
 </template>
@@ -77,7 +77,7 @@ export default {
 </script>
 <style>
 .edit-form {
-  max-width: 400px;
+  max-width: 450px;
   margin: auto;
 }
 </style>

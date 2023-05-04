@@ -4,7 +4,7 @@
     :validation-schema="schema"
   >
     <div class="form-group">
-      <label for="episode">Tập phim:</label>
+      <label for="episode">Tên tập phim:</label>
       <Field
         name="episode"
         type="text"
@@ -15,7 +15,7 @@
     </div>
 
     <div class="form-group">
-      <label for="content">Nội dung tập phim:</label>
+      <label for="content">Tên tập phim:</label>
       <Field
         name="content"
         type="text"
@@ -26,7 +26,7 @@
     </div>
 
     <div class="form-group">
-      <label for="rating">Đánh giá:</label>
+      <label for="rating">Điểm đánh giá:</label>
       <Field
         name="rating"
         type="number"
@@ -36,7 +36,7 @@
       <ErrorMessage name="rating" class="error-feedback" />
     </div>
     <div class="form-group">
-      <label for="url">link tập phim:</label>
+      <label for="url">Link tập phim</label>
       <Field
         name="url"
         type="text"

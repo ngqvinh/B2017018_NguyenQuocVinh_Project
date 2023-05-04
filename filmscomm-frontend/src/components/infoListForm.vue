@@ -1,7 +1,7 @@
 <template>
   <Form @submit="$emit('info-submit', infoLocal)" :validation-schema="schema">
     <div class="form-group">
-      <label for="title">Tên phim</label>
+      <label for="title">Tên Phim</label>
       <Field
         name="title"
         type="text"
@@ -12,7 +12,7 @@
     </div>
 
     <div class="form-group">
-      <label for="illustrator">Link ảnh</label>
+      <label for="illustrator">Link ảnh minh họa</label>
       <Field
         name="illustrator"
         type="text"
@@ -43,7 +43,7 @@
       <ErrorMessage name="type" class="error-feedback" />
     </div>
     <div class="form-group">
-      <label for="num_episodes">Số tập</label>
+      <label for="num_episodes">Số Tập</label>
       <Field
         name="num_episodes"
         type="text"
@@ -61,11 +61,12 @@
         v-model="infoLocal.vietsub"
       />
       <label for="vietsub" class="form-check-label">
-        <strong>Vietsub</strong>
+        <strong>Phụ đề</strong>
       </label>
     </div>
+
     <div class="form-group">
-      <label for="exampleFormControlTextarea1">Tóm tắt</label>
+      <label for="exampleFormControlTextarea1">Giới thiệu</label>
       <textarea
         name="compendious"
         type="text"

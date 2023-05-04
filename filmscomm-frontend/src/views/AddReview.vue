@@ -1,7 +1,7 @@
 <template>
   <div class="edit-form">
     <div class="jumbotron">
-      <h4>Thêm phim</h4>
+      <h4>Thêm tập phim</h4>
       <reviewListForm :review="review" @review-submit="addreview" @review-delete="resetreview" />
       <p>{{ message }}</p>
     </div>
@@ -36,7 +36,7 @@ export default {
         console.log(error);
       } else {
         console.log(response.data);
-        this.message = "Phim được thêm thành công.";
+        this.message = "Tập phim được thêm thành công.";
       }
     },
     resetreview() {
@@ -50,7 +50,7 @@ export default {
 </script>
 <style>
 .edit-form {
-  max-width: 400px;
+  max-width: 450px;
   margin: auto;
 }
 </style>

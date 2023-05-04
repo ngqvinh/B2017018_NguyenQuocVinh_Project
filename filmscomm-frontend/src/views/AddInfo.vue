@@ -1,7 +1,7 @@
 <template>
   <div class="edit-form">
     <div class="jumbotron">
-      <h4>Thêm Công Thức</h4>
+      <h4>Thêm Phim</h4>
       <infoListForm :info="info" @info-submit="addInfo" @info-delete="resetInfo" />
       <p>{{ message }}</p>
     </div>
@@ -52,7 +52,7 @@ export default {
 </script>
 <style>
 .edit-form {
-  max-width: 400px;
+  max-width: 450px;
   margin: auto;
 }
 </style>

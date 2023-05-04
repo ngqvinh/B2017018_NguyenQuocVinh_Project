@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand navbar-dark bg-secondary">
-      <a href="/info" class="navbar-brand fas fa-film"> FilmComm</a>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <a href="/info" class="navbar-brand fas fa-film text-warning"> FilmsComm</a>
 
       <div v-if="currentUser">
         <li class="nav-item navbar-nav mr-auto">
           <router-link to="/add" class="nav-link">
-            Thêm phim <i></i>
+            Thêm Phim <i></i>
           </router-link>
         </li>
       </div>
@@ -61,7 +61,7 @@ export default {
 </script>
 <style>
 body {
-  background-image: url(https://images.unsplash.com/photo-1682361370648-521dce49abb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+  background-image: url(https://images.unsplash.com/photo-1505775561242-727b7fba20f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
   background-size: cover;
   background-repeat: no-repeat;
 }

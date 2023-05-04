@@ -68,7 +68,7 @@ export default {
 </script>
 <style>
 .edit-form {
-  max-width: 400px;
+  max-width: 450px;
   margin: auto;
 }
 </style>
