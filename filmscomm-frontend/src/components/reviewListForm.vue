@@ -15,7 +15,7 @@
     </div>
 
     <div class="form-group">
-      <label for="content">Tên tập phim:</label>
+      <label for="content">Nội dung:</label>
       <Field
         name="content"
         type="text"

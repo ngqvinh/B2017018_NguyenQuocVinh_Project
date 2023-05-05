@@ -16,7 +16,7 @@
             <div class="col-md-6">
               <div class="card-body">
                 <h1 class="mt-0">{{ review.episode }}</h1>
-                <p>Ca sĩ trình bày: {{ review.content }}</p>
+                <p>Giới thiệu: {{ review.content }}</p>
                 <p>Đánh giá: {{ review.rating }}</p>
                 <div v-if="currentUser">
                   <div v-if="currentUser.id === review.ownerId">
@@ -32,7 +32,7 @@
       </div>
     </div>
     <router-link :to="{ path: this.$route.params.id + '/add' }">
-      <button class="btn btn-info" type="button">Thêm bài hát</button>
+      <button class="btn btn-info" type="button">Thêm tập phim</button>
     </router-link>
   </div>
 </template>
